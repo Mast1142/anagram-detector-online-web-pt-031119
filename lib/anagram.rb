@@ -6,13 +6,12 @@ class Anagram
   attr_accessor :data
 
   def initialize(data)
-    @data = data.split("")
+    @data = data.split("") #spells out data in array form 
     #data.chars.sort.join #sort the string alphabetically
     #binding.pry
   end
 
   def match(matching)
-    found = []
     spelling = matching.collect do |x|
       x.split("")
     end
@@ -20,8 +19,9 @@ class Anagram
       if x.sort == @data.sort
         x.join("")
       end
-      x
-      binding.pry
+    end
+    found = check.select do |x|
+      x.join("")
     end
   end
 end
