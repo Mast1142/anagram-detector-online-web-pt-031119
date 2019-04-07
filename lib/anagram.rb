@@ -15,11 +15,12 @@ class Anagram
     spelling = matching.collect do |x|
       x.split("")
     end
-    check = spelling.collect do |x|
-      x.sort == @data.sort
-    end
-    if check.include?(false)
-      []
+    check = spelling.find_all do |x|
+      if x.sort == @data.sort
+        check
+      else
+        []
+      end
     end
   end
 
