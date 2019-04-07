@@ -18,6 +18,7 @@ class Anagram
     spelling.collect do |x|
       x.sort == @data.sort
     end
+    binding.pry
   end
 
 
