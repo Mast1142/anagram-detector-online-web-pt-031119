@@ -12,12 +12,13 @@ class Anagram
   end
 
   def match(matching)
+    found = []
     spelling = matching.collect do |x|
       x.split("")
     end
     check = spelling.collect do |x|
       if x.sort == @data.sort
-        x.join("")
+        found << x.join("")
       end
     end
   end
