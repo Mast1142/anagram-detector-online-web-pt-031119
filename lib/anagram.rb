@@ -20,7 +20,7 @@ class Anagram
         x.join("")
       end
     end
-    found = check.select do |x|
+    found = check.collect do |x|
       x.join("")
     end
   end
