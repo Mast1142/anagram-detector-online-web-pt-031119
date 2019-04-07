@@ -15,6 +15,7 @@ class Anagram
     spelling = matching.collect do |x|
       x.split("")
     end
+  end
     binding.pry
 
 
