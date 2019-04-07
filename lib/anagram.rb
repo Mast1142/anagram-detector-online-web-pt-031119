@@ -20,6 +20,8 @@ class Anagram
       if x.sort == @data.sort
         x.join("")
       end
+      x
+      binding.pry
     end
   end
 end
