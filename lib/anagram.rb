@@ -8,9 +8,14 @@ class Anagram
   def initialize(data)
     @data = data.split("")
     #data.chars.sort.join #sort the string alphabetically
-    binding.pry
+    #binding.pry
   end
 
+  def match(matching)
+    spelling = matching.collect do |x|
+      x.split("")
+    end
+    binding.pry
 
 
 end
