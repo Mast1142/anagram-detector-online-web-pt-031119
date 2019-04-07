@@ -18,7 +18,7 @@ class Anagram
     check = spelling.collect do |x|
       x.sort == @data.sort
     end
-    if check.include? == false
+    if check.include?(false)
       []
     end
   end
