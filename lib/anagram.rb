@@ -23,6 +23,3 @@ class Anagram
     found
     binding.pry
   end
-
-
-end
