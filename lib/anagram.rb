@@ -19,7 +19,6 @@ class Anagram
       x.sort == @data.sort
         found = x.join("")
       end
+      found
     end
-    found
-    binding.pry
   end
