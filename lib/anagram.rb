@@ -20,6 +20,8 @@ class Anagram
         found = x.join("")
       end
     end
+    found
+    binding.pry
   end
 
 
