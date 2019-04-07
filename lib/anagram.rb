@@ -18,8 +18,6 @@ class Anagram
     check = spelling.collect do |x|
       if x.sort == @data.sort
         x.join("")
-      else
-        []
       end
     end
   end
