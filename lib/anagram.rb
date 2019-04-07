@@ -17,7 +17,7 @@ class Anagram
     end
     check = spelling.collect do |x|
       if x.sort == @data.sort
-        x.join("").compact
+        x.join("").compact!
       end
     end
   end
