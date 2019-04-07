@@ -16,9 +16,11 @@ class Anagram
       x.split("")
     end
     check = spelling.collect do |x|
-      x.sort == @data.sort
+      x.sort == @data.sort 
     end
-    binding.pry
+    if check.include? == false
+      []
+    end
   end
 
 
